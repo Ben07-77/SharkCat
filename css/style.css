@@ -75,17 +75,17 @@ a{
     color: green ;
 }
 section.night{
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.769),rgba(0, 0, 0, 0.792)), url(./CreativePlayfulHarrierhawk-max-1mb.gif);
-    color: #8BE58E;
+    background: linear-gradient(to bottom,rgb(11,14,21),rgb(11,14,21)), url(./CreativePlayfulHarrierhawk-max-1mb.gif);
+    color: white;
     transition: 0.4s ease;
 }
 section.greenNight{
     background: #1F2B1F;
-    color: #8BE58E;
+    color: white;
     transition: 0.4s ease;
 }
 nav.night{
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.618),rgba(0, 0, 0, 0.634)), url(./CreativePlayfulHarrierhawk-max-1mb.gif);
+    background: linear-gradient(to bottom,rgb(11,14,21),rgb(11,14,21)), url(./CreativePlayfulHarrierhawk-max-1mb.gif);
     color: white;
     transition: 0.4s ease;
 }
@@ -203,9 +203,7 @@ body:hover .bg-base{
     color: #71c672;
     transition: all 0.4s ;
 }
-.black1{
-    color: green;
-}
+
 .navbar{
     color: rgb(237, 251, 255);
     margin-bottom: 200px;

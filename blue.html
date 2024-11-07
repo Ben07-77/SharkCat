@@ -5,13 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Page</title>
+    <title>Shark Cat PFP Maker</title>
     <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/line-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        .horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
+    padding: 10px;
+  }
 
+  .horizontal-scroll button {
+    flex: 0 0 auto; /* Prevents buttons from shrinking and keeps them inline */
+  }
+      .dog-container {
+          position: relative;
+          width: 400px;
+          height: 400px;
+          background: url(./nft/background/original.png);
+          background-size: cover;
+          background-position: center;
+      }
+    
+      .dog-container img {
+          position: absolute;
+          object-fit: contain;
+      }
+    
+      #base-sharkCat {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+#head-layer {
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    position: absolute;
+}
+
+#eyes-layer {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+}
+
+#ears-layer {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+}
+
+
+    </style>
+    
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-aos="fade-up" data-aos-delay="200">
     <!-- Navigation bar-->
@@ -20,14 +76,14 @@
       <nav class="navbar navbar-dark fixed-top mb-1">
         <div class="container">
           <a style="padding-top: 20px; " class="navbar-brand h3" href="#">
-            <span class="Logo fontStyle fw-bold d-lg-block "><em><img style="width: 17.80px; height: 35.59px" src="./css/images/SubtractBlack.png" /><img style="width: 17.80px; height: 35.59px" src="./css/images/SubtractBlack.png" /></em><span class="word ">   <span style="padding-left: 13px;  font-size: 24px; font-family: Roboto Mono; font-weight: 700; text-transform: uppercase; line-height: 26px; word-wrap: break-word">C</span><span style="font-size: 22px; font-family: Roboto Mono; font-weight: 700; text-transform: uppercase; line-height: 26px; word-wrap: break-word">ode</span><span style="font-size: 24px; font-family: Roboto Mono; font-weight: 700; text-transform: uppercase; line-height: 26px; word-wrap: break-word">C</span><span style="font-size: 22px; font-family: Roboto Mono; font-weight: 700; text-transform: uppercase; line-height: 26px; word-wrap: break-word">learance</span> </span></span>
+            <span class="Logo fontStyle fw-bold d-lg-block "><em><img style="width: 50px; height: 50px; border-radius: 80%;" src="./css/images/pfp.jpg" /></span>
           </a>
           <div>
             <div class="m-4">
               <label style="margin: 30px;" id="dark-change"></label>
             </div>
-            <div style="  margin-right: 50px; width: 205px; height: 45px; padding-left: 18px; padding-right: 18px; padding-top: 13px; padding-bottom: 13px; background: #8BE58E; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-              <a style="text-decoration: none; color: black;" href="application.html"><div style="text-align: center; color: #172518; font-size: 16px; font-family: Roboto Mono; font-weight: 500; text-transform: uppercase; line-height: 19px; letter-spacing: 0.32px; word-wrap: break-word">[Request a Quote]</div></a>
+            <div style="margin-right: 50px; width: 205px; height: 45px; padding-left: 18px; padding-right: 18px; padding-top: 13px; padding-bottom: 13px; background: rgb(203, 174, 137); justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+              <a style="text-decoration: none; color: black;" href="#costume"><div style="text-align: center; color: #172518; font-size: 16px; font-family: Roboto Mono; font-weight: 500; text-transform: uppercase; line-height: 19px; letter-spacing: 0.32px; word-wrap: break-word">[Make a SharkCat]</div></a>
             </div>
           </div>
         </div>
@@ -37,326 +93,233 @@
     <!--Navigation bar-->
   <!--Home begin-->
   <section style="padding-top: 130px;" id="home" class="full-height">
+
     <div class="container" data-aos="fade-up" data-aos-delay="500">
         <div class="row p-1"> 
             <div class="col-lg-7" data-aos="fade-up" data-aos-delay="1000">
                 <p>
-                  <div id="img" style="margin-bottom: 20px;"><h4><i style="padding-right: 10px; margin-top: 4px;" class="las la-star"></i><span style="font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 28px; word-wrap: break-word">Over 40+ companies audited </span></h4><span style="color: rgba(23, 37, 24, 0.30); font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 28px; word-wrap: break-word"></span></div>
-                  <div style="width: 100%; font-size: 56px; font-family: Roboto; font-weight: 300; line-height: 60px; word-wrap: break-word">We safeguard the integrity and security of decentralized ecosystems</div>
+                  <div id="img" style="margin-bottom: 20px;"><h4><i style="padding-right: 10px; margin-top: 4px;" class="las la-star"></i><span style="font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 28px; word-wrap: break-word">Over 3000+ creative combinations</span></h4><span style="color: rgba(23, 37, 24, 0.30); font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 28px; word-wrap: break-word"></span></div>
+                  <div style="width: 100%; font-size: 56px; font-family: Roboto; font-weight: 300; line-height: 60px; word-wrap: break-word">SHARK CAT!!!</div>
                 </p>
                 <div style="width: 100%">
-                  <span style=" font-size: 22px; font-family: Roboto; font-weight: 400; line-height: 32px; word-wrap: break-word">We are dedicated to ensuring the trustworthiness of blockchain-based projects and protecting users from potential vulnerabilities and risks </span>
-                  <span style=" font-size: 22px; font-family: Roboto; font-weight: 600; line-height: 32px; word-wrap: break-word">through the power of smart contracts.</span>
+                  <span style=" font-size: 22px; font-family: Roboto; font-weight: 400; line-height: 32px; word-wrap: break-word; color: rgb(163, 136, 100);">An in-browser profile picture generator for making $sc profiles</span>
+                  <br>
+                  <span style=" font-size: 22px; font-family: Roboto; font-weight: 600; line-height: 32px; word-wrap: break-word">Create your own SharkCat</span>
                 </div>
-                <div style="  margin-top: 40px; width: 205px; height: 45px; padding-left: 18px; padding-right: 18px; padding-top: 13px; padding-bottom: 13px; background: #8BE58E; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-                  <a style="text-decoration: none; color: black;" href="application.html"><div style="text-align: center; font-size: 16px; font-family: Roboto Mono; font-weight: 500; text-transform: uppercase; line-height: 19px; letter-spacing: 0.32px; word-wrap: break-word">[Request a Quote]</div></a>
+                <div style="  margin-top: 40px; width: 205px; height: 45px; padding-left: 18px; padding-right: 18px; padding-top: 13px; padding-bottom: 13px; background: rgb(203, 174, 137); justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                  <a style="text-decoration: none; color: black;" href="#costume"><div style="text-align: center; font-size: 16px; font-family: Roboto Mono; font-weight: 500; text-transform: uppercase; line-height: 19px; letter-spacing: 0.32px; word-wrap: break-word">[Make a SharkCat]</div></a>
                 </div>
             </div>
             <div class="col-lg-5 col-">
-              <h1><span class="green2">Home to </span> <b class="black1">security <a href="#services"><b><i class="las la-lock padlock"></i></b></a></b></h1>
+              <h1><span class="green2">Cats</span> <b style="color: rgb(203, 174, 137);"> that are also  <span style="color: rgb(36, 167, 232);">Sharks</span> <a href="#services"><b><i style="color: rgb(203, 174, 137);" class="las la-paw padlock"></i></b></a></b></h1>
             </div>
             
         </div>
-      <div style="margin-top: 130px;" class="row p-2">
-        <div class="col-lg-4">
-          <div style="font-size: 16px; font-family: Roboto Mono; font-weight: 500; text-transform: uppercase; line-height: 20px; letter-spacing: 0.32px; word-wrap: break-word">What we do</div>
-        </div>
-        <div class="col-lg-8">
-          <div style="width: 100%; font-size: 30px; font-family: Roboto; font-weight: 300; line-height: 48px; word-wrap: break-word; margin: auto;">
-            With a team of expert in-house auditors and using cutting edge tools, we conduct thorough assessments of smart contracts.
-          </div>
-          <div style=" margin-top: 80px; width: 100%; font-size: 36px; font-family: Roboto; font-weight: 300; line-height: 48px; word-wrap: break-word">
-            We scrutinize every line of code to identify potential vulnerabilities, bugs, and loopholes.
-          </div>
-      </div>
-    </div> 
     </div>
+    <div id="costume">
+      <h1 style="width: 100%; font-size: 56px; font-family: Roboto; font-weight: 300; line-height: 60px; word-wrap: break-word; padding-top: 300px;padding-bottom: 100px; text-align: center;">
+        Customize Your SharkCat
+      </h1>
+      
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <!-- First Column (Image & Layers) -->
+            <div style="padding-top: 50px;" class="col-lg-7"> <div class="dog-container"> <img id="base-sharkCat" src=""> <!-- Dynamic Layers --> <img id="head-layer" src=""> <img id="eyes-layer" src=""> <img id="ears-layer" src=""> <!-- Add the canvas element here --> <canvas id="canvas" width="400" height="400" style="display:none;"></canvas> </div> </div>
+            
+            <!-- Second Column (Controls & Buttons) -->
+            <div class="col-lg-5">
+              <h2>Select Head</h2>
+              <div  class="horizontal-scroll">
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 0)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/Mchead.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 1)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/VenomHead.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 2)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/GokuHead (1).png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 3)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/IronHat.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 4)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/RickandMhat.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 5)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/SpaceHead.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 6)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/PresidentHat.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 7)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/SeaHead.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 8)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/MiliHat.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 9)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/PhantomHat.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 10)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/spidermanHead.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 11)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/PFHead.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 12)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/BinanceHat.png" alt=""></button>
+              </div>
+  
+        
+              <!-- Eyes Selection -->
+               <h2>Select Teeth/Eyes</h2>
+               <div  class="horizontal-scroll">
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 0)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Mcteeth.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 1)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Venomteeth.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 2)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/GokuTeeth.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 3)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Ironteeth.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 4)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/RickandMortyTeeth.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 5)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/RickandMortyTeeth.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 6)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Mic.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 7)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/SeaTeeth.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 8)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Granade.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 9)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/PhantomTeeth.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 10)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/spiderman.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 11)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/pumpfunPill.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 12)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Binanceteeth.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 13)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Glasses.png" alt=""></button>
+               </div>
+        
+              <!-- Ears Selection -->
+               <h2>Select Body</h2>
+               <div  class="horizontal-scroll">
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 0)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/Mcbody.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 1)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/VenomBod.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 2)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/Gokubod.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 3)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/IronBod.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 4)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/RickandMBody.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 5)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/SpaceBod.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 6)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/PresidoBod.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 7)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/SeaBod.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 8)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/AviBod.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 9)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/PhantomBod.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 10)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/spidermanBod.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 11)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/pumpfunBod.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 12)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/Binancebody.png" alt=""></button>
+               </div>
+        
+  
+                          <!-- background Selection -->
+                           <h2>Select Background</h2>
+                           <div  class="horizontal-scroll">
+                            <button onclick="selectPart('background', 0)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/original.png" alt=""></button>
+                            <button onclick="selectPart('background', 1)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/Gokusky.png" alt=""></button>
+                            <button onclick="selectPart('background', 2)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/RickandMPortal.png" alt=""></button>
+                            <button onclick="selectPart('background', 3)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/AstronautBackground.png" alt=""></button>
+                            <button onclick="selectPart('background', 4)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/Sonicbackground.png" alt=""></button>
+                            <button onclick="selectPart('background', 5)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/Presido.png" alt=""></button>
+                            <button onclick="selectPart('background', 6)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/Partybackground.png" alt=""></button>
+                           </div>
+        
+                           
+              <!-- Randomize and Download -->
+               <div style="padding-top: 20px;">
+                <button style="margin-right: 50px; width: auto; height: auto; padding-left: 18px; padding-right: 18px; padding-top: 13px; padding-bottom: 13px; background: rgb(203, 174, 137); justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex; border: none;" onclick="pickRandom()">Auto Generate</button>
+                <button style="margin-right: 50px; width: auto; height: auto; padding-left: 18px; padding-right: 18px; padding-top: 13px; padding-bottom: 13px; background: rgb(203, 174, 137); justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex; border: none;" onclick="downloadMeme()">Download Meme</button>
+               </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+      </div>
+    
 </section>
 
 <!--Home end-->
+<section>
+<section>
+<section>
 
-<!--Goals start-->
-<section style="color: black; background: #8BE58E" id="goals" class="full-height">
-  <div class="container">
-    <b>
-      <div style="padding-top: 70px; padding-bottom: 70px; font-size: 16px; font-family: Roboto Mono; text-transform: uppercase; line-height: 20px; letter-spacing: 0.32px; word-wrap: break-word">OUR GOALS</div>
-    </b>
-    <div class="row gy-4">
-      <div class="col-md-4">
-        <div>
-          <div style="width: 100%; height: 100%; background: #8BE58E"></div>
-          <img style="width: 100%;" src="./css/images/Screenshot (33).png" alt="">
-          <div style=" padding-top: 39px; padding: auto; font-size: 32px; font-family: Roboto; font-weight: 300; line-height: 40px; word-wrap: break-word">Trust</div>
-          <div style="padding-top: 14px; padding: auto; width: 100%;  font-size: 18px; font-family: Roboto; line-height: 24px; word-wrap: break-word">We ensure the trustworthiness of blockchain based projects protecting users from potential vulnerabilities</div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <img style="width: 100%;" src="./css/images/Screenshot (37).png" alt="">
-        <div style="padding-top: 39px; padding: auto; font-size: 32px; font-family: Roboto; font-weight: 300; line-height: 40px; word-wrap: break-word">Transparency</div>
-        <div style="padding-top: 14px; padding: auto; width: 100%;  font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word">We promote transparency, reliability, and accountability in the rapidly evolving world of blockchain technology</div>
-      </div>
-      <div class="col-md-4">
-        <img style="width: 100%;" src="./css/images/Screenshot (40).png" alt="">
-        <div style="padding-top: 39px; padding: auto; font-size: 32px; font-family: Roboto; font-weight: 300; line-height: 40px; word-wrap: break-word">Confidence</div>
-        <div style="padding-top: 14px; padding: auto; width: 100%;  font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word">We mitigate risks for project owners and promote confidence to investors, users and the wider blockchain community</div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Goals continue-->
-<!--About start-->
-<section id="about" class="full-height">
-  <div class="container">
-    <b>
-       <div style="padding-top: 70px; padding-bottom: 70px; font-size: 16px; font-family: Roboto Mono; text-transform: uppercase; line-height: 20px; letter-spacing: 0.32px; word-wrap: break-word">Who we are</div>
-    </b>
-  <div style="width: 100%;  font-size: 56px; font-family: Roboto; font-weight: 300; line-height: 60px; word-wrap: break-word">We’re a team of expert experienced smart contract auditors and KYC specialists.</div>
-  <div style="padding-top: 77px;" class="row gy-4">
+  <script>
+    // Arrays for different body parts
+    const heads = ['./nft/head/Mchead.png', './nft/head/VenomHead.png', './nft/head/GokuHead (1).png', './nft/head/IronHat.png', './nft/head/RickandMhat.png', './nft/head/SpaceHead.png', './nft/head/PresidentHat.png', './nft/head/SeaHead.png', './nft/head/MiliHat.png', './nft/head/PhantomHat.png', './nft/head/spidermanHead.png', './nft/head/PFHead.png', './nft/head/BinanceHat.png'];
+const eyes = ['./nft/teeth/Mcteeth.png', './nft/teeth/Venomteeth.png', './nft/teeth/GokuTeeth.png', './nft/teeth/Ironteeth.png', './nft/teeth/RickandMortyTeeth.png', './nft/teeth/Mic.png', './nft/teeth/SeaTeeth.png', './nft/teeth/Granade.png', './nft/teeth/PhantomTeeth.png', './nft/teeth/spiderman.png', './nft/teeth/pumpfunPill.png', './nft/teeth/Binanceteeth.png', './nft/teeth/Glasses.png'];
+const ears = ['./nft/body/Mcbody.png', './nft/body/VenomBod.png', './nft/body/Gokubod.png', './nft/body/IronBod.png', './nft/body/RickandMBody.png', './nft/body/SpaceBod.png', './nft/body/PresidoBod.png', './nft/body/SeaBod.png', './nft/body/AviBod.png', './nft/body/PhantomBod.png', './nft/body/spidermanBod.png', './nft/body/pumpfunBod.png', './nft/body/Binancebody.png'];
+const background = ['./nft/background/original.png', './nft/background/Gokusky.png', './nft/background/RickandMPortal.png', './nft/background/AstronautBackground.png', './nft/background/Sonicbackground.png', './nft/background/Presido.png', './nft/background/Partybackground.png'];
 
-    <div style="padding-top: 35px; padding-right: 50px;" class="col-lg-4">
-      <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-        <div style="width: 48px; height: 48px; position: relative">
-            <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #8BE58E"></div>
-            <div style="width: 24px; height: 24px; left: 12px; top: 12px; position: absolute">
-                <img src="./css/images/coins-stacked-03.png" alt="">
-            </div>
-        </div>
-        <div style="width: 100%; font-size: 22px; font-family: Roboto; font-weight: 400; line-height: 32px; word-wrap: break-word">We have a deep understanding of blockchain technology</div>
-    </div>
-    </div>
+let selectedHead = '';
+let selectedEyes = '';
+let selectedEars = '';
+let selectedBackground = './nft/background/original.png';
 
-    <div style="padding-top: 35px; padding-right: 50px;"  class="col-lg-4">
-      <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-        <div style="width: 48px; height: 48px; position: relative">
-            <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #8BE58E"></div>
-            <div style="width: 24px; height: 24px; left: 12px; top: 12px; position: absolute">
-               <img src="./css/images/book-open-01.png" alt="">
-            </div>
-        </div>
-        <div style="width: 100%;  font-size: 22px; font-family: Roboto; font-weight: 400; line-height: 32px; word-wrap: break-word">We’re educated, well versed, and experienced in industry best practices</div>
-    </div>
-    </div>
-   
-  <div style="padding-top: 35px; -right: 50px;"  class="col-lg-4">
-      <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-        <div style="width: 48px; height: 48px; position: relative">
-            <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #8BE58E"></div>
-            <div style="width: 24px; height: 24px; left: 12px; top: 12px; position: absolute">
-                <img src="./css/images/building-08.png" alt="">
-            </div>
-        </div>
-        <div style="width: 100%; font-size: 22px; font-family: Roboto; font-weight: 400; line-height: 32px; word-wrap: break-word">Our KYC specialists are versed in regulatory and compliance standards</div>
-        <a class="normal" style="text-decoration: none;" href=""><div style=" font-size: 16px; font-family: Roboto; font-weight: 400; text-decoration: underline; line-height: 24px; word-wrap: break-word">What is KYC?</div></a>
-    </div>
-    
+function selectPart(part, index) {
+    if (part === 'head') {
+        document.getElementById('head-layer').src = heads[index];
+        selectedHead = heads[index];
+    } else if (part === 'eyes') {
+        document.getElementById('eyes-layer').src = eyes[index];
+        selectedEyes = eyes[index];
+    } else if (part === 'ears') {
+        document.getElementById('ears-layer').src = ears[index];
+        selectedEars = ears[index];
+    } else if (part === 'background') {
+        document.querySelector('.dog-container').style.backgroundImage = `url(${background[index]})`;
+        selectedBackground = background[index];
+    }
+}
+
+function pickRandom() {
+    const randomHead = Math.floor(Math.random() * heads.length);
+    const randomEyes = Math.floor(Math.random() * eyes.length);
+    const randomEars = Math.floor(Math.random() * ears.length);
+    const randomBackground = Math.floor(Math.random() * background.length);
+    selectPart('head', randomHead);
+    selectPart('eyes', randomEyes);
+    selectPart('ears', randomEars);
+    selectPart('background', randomBackground);
+}
+
+function downloadMeme() {
+    const canvas = document.getElementById('canvas');
+    if (!canvas) {
+        console.error('Canvas element not found');
+        return;
+    }
+    const ctx = canvas.getContext('2d');
+    if (!ctx) {
+        console.error('Failed to get 2D context');
+        return;
+    }
+    canvas.width = 400;
+    canvas.height = 400;
+
+    const backgroundImage = new Image();
+    const eyesImage = new Image();
+    const earsImage = new Image();
+    const headImage = new Image();
+
+    backgroundImage.src = selectedBackground || './nft/background/original.png';
+    eyesImage.src = selectedEyes || './nft/teeth/Venomteeth.png';
+    earsImage.src = selectedEars || './nft/body/VenomBod.png';
+    headImage.src = selectedHead || './nft/head/VenomHead.png';
+
+    Promise.all([
+        loadImage(backgroundImage),
+        loadImage(eyesImage),
+        loadImage(earsImage),
+        loadImage(headImage)
+    ]).then(() => {
+        ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+        ctx.drawImage(eyesImage, 0, 0, canvas.width, canvas.height);
+        ctx.drawImage(earsImage, 0, 0, canvas.width, canvas.height);
+        ctx.drawImage(headImage, 0, 0, canvas.width, canvas.height);
+
+        const link = document.createElement('a');
+        link.download = 'custom-meme.jpeg';  // Change to JPEG
+        link.href = canvas.toDataURL('image/jpeg');  // Change to JPEG
+        link.click();
+    }).catch(error => {
+        console.error("Error loading images.", error);
+    });
+}
+
+function loadImage(img) {
+    return new Promise((resolve, reject) => {
+        img.crossOrigin = 'anonymous';
+        img.onload = resolve;
+        img.onerror = () => reject(new Error(`Error loading image: ${img.src}`));
+    });
+}
+
+
+
+</script>
   
-  </div>
-  </div>
-  <div class="row gy-4">
-    <div style="padding-top: 55px; padding-right: 50px;"  class="col-lg-4">
-      <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-        <div style="width: 48px; height: 48px; position: relative">
-            <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #8BE58E"></div>
-            <div style="width: 24px; height: 24px; left: 12px; top: 12px; position: absolute">
-                <img src="./css/images/code-square-02.png" alt="">
-            </div>
-        </div>
-        <div style="width: 100%; font-size: 22px; font-family: Roboto; font-weight: 400; line-height: 32px; word-wrap: break-word">We’re experts in various smart contract programming languages</div>
-    </div>
-    </div>
-
-    <div style="padding-top: 55px; padding-right: 50px;"  class="col-lg-4">
-      <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-        <div style="width: 48px; height: 48px; position: relative">
-            <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #8BE58E"></div>
-            <div style="width: 24px; height: 24px; left: 12px; top: 12px; position: absolute">
-                <img src="./css/images/cryptocurrency-03.png" alt="">
-            </div>
-        </div>
-        <div style="width: 100%; font-size: 22px; font-family: Roboto; font-weight: 400; line-height: 32px; word-wrap: break-word">A fifth point here would be really awesome, at 2 lines especially great</div>
-    </div>
-    </div>
-
-    <div style="padding-top: 55px; padding-right: 50px;"  class="col-lg-4">
-      <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-        <div style="width: 48px; height: 48px; position: relative">
-            <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #8BE58E"></div>
-            <div style="width: 24px; height: 24px; left: 12px; top: 12px; position: absolute">
-                <img src="./css/images/trophy-01.png" alt="">
-            </div>
-        </div>
-        <div style="width: 100%; font-size: 22px; font-family: Roboto; font-weight: 400; line-height: 32px; word-wrap: break-word">A sixth point here would be really awesome, at 2 lines especially great</div>
-    </div>
-    </div>
-  </div>
-  </div>
-
-  
-
-</section>
-
-<section style="padding-top: 40px; padding-bottom: 120px;" id="about" class="full-height">
-  <div class="container">
-  <div class="row gy-4">
-    <div style="padding-bottom:40px; padding-top: 20px; font-size: 16px; font-family: Roboto Mono; font-weight: 500; text-transform: uppercase; line-height: 19px; letter-spacing: 0.32px; word-wrap: break-word">Meet the team</div>
-
-  <div class="col-lg-6">
-    <div class="col-lg-12">
-      <div class="whiteBox">
-        <div >
-          <div style="width: 100%; height: 100%;">
-            <div style="padding: 40px; display: flex; flex-direction: row;">
-      
-              <div style="width: 100px; height: 100px; background: #8BE58E; padding-left: 20px;">
-                <img style="padding-left: 19px;padding-right: 37px; padding-top: 35px; top: 100px;" src="./css/images/user-02.png" alt="">
-              </div>
-      
-              <div style="padding-left: 45px; display: flex; flex-direction: column;">
-              <div style="padding-bottom: 10px; font-size: 16px; font-family: Roboto Mono; font-weight: 500; text-transform: uppercase; line-height: 19px; letter-spacing: 0.32px; word-wrap: break-word">CEO and OWNER</div>
-              <div style=" font-size: 28px; font-family: Roboto; font-weight: 400; line-height: 32px; word-wrap: break-word">Jerry Seinfeld</div>
-              <div style="width: 100%; height: 100%; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
-                <div id="more" style="display: none; padding-top: 10px; width: 100%; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word">Name got his start in the blockchain community 10 years ago when lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                <div id="readMore2" style="padding-top: 25px; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word"><a style="text-decoration: none;" class="read-more" onclick="readMore2()" id="myBtn">Read more</a></div>
-                
-                <div style="width: 87.50px; height: 0px; opacity: 0; border: 0.50px #172518 solid"></div>
-              </div>
-      
-            </div>
-            
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-6">
-    <div class="col-lg-12">
-      <div class="whiteBox">
-        <div >
-          <div style="width: 100%; height: 100%;">
-            <div style="padding: 40px; display: flex; flex-direction: row;">
-      
-              <div style="width: 100px; height: 100px; background: #8BE58E; padding-left: 20px;">
-                <img style="padding-left: 19px;padding-right: 37px; padding-top: 35px; top: 100px;" src="./css/images/user-02.png" alt="">
-              </div>
-      
-              <div style="padding-left: 45px; display: flex; flex-direction: column;">
-              <div style="padding-bottom: 10px; font-size: 16px; font-family: Roboto Mono; font-weight: 500; text-transform: uppercase; line-height: 19px; letter-spacing: 0.32px; word-wrap: break-word">Vice President</div>
-              <div style="font-size: 28px; font-family: Roboto; font-weight: 400; line-height: 32px; word-wrap: break-word">Steve Carrell</div>
-              <div style="width: 100%; height: 100%; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
-                <div id="more2" style="display: none; padding-top: 10px; width: 100%; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word">Name got his start in the blockchain community 10 years ago when lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                <div id="readMore" style="padding-top: 25px; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word"><a style="text-decoration: none;" class="read-more" onclick="readMore()" id="myBtn2">Read more</a></div>
-              </div>
-      
-            </div>
-            
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  </div>
-  </div>
-</section>
-<!--About end-->
-
-<!--Lets work-->
-<section style="padding-bottom: 0%;" id="finish" class="full-height">
-  <div style="width: 100%; height: 100%; background: #1F2B1F">
-    <div class="" data-aos="fade-up" data-aos-delay="500">
-      <div class="row d-flex flex-row-reverse">
-
-
-
-            <img style="height: 100%;" class="col-md-6" src="./css/images/Screenshot (39).png" alt="">
-
-
-        <div class="col-md-6 Let">
-            <div style="color: #F9F9FA; font-size: 56px; font-family: Roboto; font-weight: 300; line-height: 60px; word-wrap: break-word">Let’s work together</div>
-            <div style="margin-top: 40px; width: 100%; color: #F9F9FA; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word">We will help you lay the foundation for your project. Lorem ipsum dolor set amit. Consectetur adipiscing elit, sed do eiusmod tempor incididunt. Let us know how we can help.  </div>
-            <div style="  margin-top: 40px; width: 205px; height: 45px; padding-left: 18px; padding-right: 18px; padding-top: 13px; padding-bottom: 13px; background: #8BE58E; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-              <a style="text-decoration: none; color: black;" href="application.html"><div style="text-align: center; color: #172518; font-size: 16px; font-family: Roboto Mono; font-weight: 500; text-transform: uppercase; line-height: 19px; letter-spacing: 0.32px; word-wrap: break-word">[Request a Quote]</div></a>
-            </div>
-        </div> 
-        
-
-
-        
-      </div>
-  </div>
-  </div>
-  <div style="width: 100%; height: 100%; background: #0B110B; color: white;">
-  <div class="row">
-    <footer class="py-5">
-      <div style="padding-top: 50px;" class="container">
-        <div class="row gy-4 justify-content-between">
-          <div class="col-lg-6">
-            <p class="mb-0">
-              <span class=" fontStyle fw-bold d-lg-block "><em style="margin-top: 10px;"><img style="width: 17.80px; height: 35.59px" src="./css/images/SubtractBlack.png" /><img style="width: 17.80px; height: 35.59px" src="./css/images/SubtractBlack.png" /></em>
-                <span style="margin-top: 50px;"><span style="padding-left: 13px;  font-size: 24px; font-family: Roboto Mono; font-weight: 700; text-transform: uppercase; line-height: 26px; word-wrap: break-word">C</span><span style="font-size: 22px; font-family: Roboto Mono; font-weight: 700; text-transform: uppercase; line-height: 26px; word-wrap: break-word">ode</span><span style="font-size: 24px; font-family: Roboto Mono; font-weight: 700; text-transform: uppercase; line-height: 26px; word-wrap: break-word">C</span><span style="font-size: 22px; font-family: Roboto Mono; font-weight: 700; text-transform: uppercase; line-height: 26px; word-wrap: break-word">learance</span></span>
-            </p>
-
-          </div>
-
-
-
-          <div class="col-auto">
-            <div class="social-icons" style="display: flex; justify-content: flex-start; align-items: center; gap: 10px;">
-
-              <div style="width: 48px; height: 48px; background: #8BE58E; display: flex; align-items: center;">
-                <a href=""><h3><i style="padding: 11px;  width: 20.03px; height: 17.02px; color: black" class="lab la-twitter"></i></h3></a>
-              </div>
-            
-              <div style="width: 48px; height: 48px; background: #8BE58E; display: flex; align-items: center;">
-                <a href=""><h3><i style="padding: 11px;  width: 20.03px; height: 17.02px; color: black" class="lab la-linkedin-in"></i></h3></a>
-              </div>
-            
-              <div style="width: 48px; height: 48px; background: #8BE58E; display: flex; align-items: center;">
-                <a href=""><h3><i style="padding: 11px;  width: 20.03px; height: 17.02px; color: black" class="lab la-discord"></i></h3></a>
-              </div>
-            
-              <div style="width: 48px; height: 48px; background: #8BE58E; display: flex; align-items: center;">
-                <a href=""><h3><i style="padding: 11px;  width: 20.03px; height: 17.02px; color: black" class="lab la-telegram"></i></h3></a>
-              </div>
-            
-            </div>
-            
-          </div>
-
-
-          <div class="row" style="padding-top: 90px">
-            <div class="col-lg-7">
-              <div class="row">
-
-                <div class="col-lg-6" style="padding-bottom: 15px; opacity: 0.70; color: #F9F9FA; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; letter-spacing: 0.16px; word-wrap: break-word">© CodeClearance all rights reserved</div>
-                <div class="col-lg-3" style="padding-bottom: 15px; opacity: 0.70; color: #F9F9FA; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; letter-spacing: 0.16px; word-wrap: break-word"><a style="color: white;" href="">Terms of Service</a></div>
-                <div class="col-lg-3" style="padding-bottom: 15px; opacity: 0.70; color: #F9F9FA; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; letter-spacing: 0.16px; word-wrap: break-word"><a style="color: white;" href="">Privacy Notice</a></div>
-              
-              </div>
-            </div>
-        </div>
-        
-          
-
-
-        </div>
-      </div>
-    </footer>
-    <div class="col-"></div>
-  </div>
-  </div>
-</section>
-
 <!--Lets work finished-->
         <script src="./js/claim.js"></script>
         <script src="./js/bootstrap.bundle.min.js"></script>
         <script src="./js/aos.js"></script>   
         <script src="./js/main.js"></script>
-        <script src="./js/script.js"></script>
 </body>
 </html>
+
+
+
+
