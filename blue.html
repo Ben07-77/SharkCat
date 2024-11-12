@@ -21,7 +21,7 @@
   }
 
   .horizontal-scroll button {
-    flex: 0 0 auto; /* Prevents buttons from shrinking and keeps them inline */
+    flex: 0 0 auto;
   }
       .dog-container {
           position: relative;
@@ -116,71 +116,87 @@
             
         </div>
     </div>
-    <div id="costume">
+    <div>
       <h1 style="width: 100%; font-size: 56px; font-family: Roboto; font-weight: 300; line-height: 60px; word-wrap: break-word; padding-top: 300px;padding-bottom: 100px; text-align: center;">
         Customize Your SharkCat
       </h1>
       
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
-            <!-- First Column (Image & Layers) -->
+          <div id="costume" class="row">
+            <!-- First Column-->
             <div style="padding-top: 50px;" class="col-lg-7"> <div class="dog-container"> <img id="base-sharkCat" src=""> <!-- Dynamic Layers --> <img id="head-layer" src=""> <img id="eyes-layer" src=""> <img id="ears-layer" src=""> <!-- Add the canvas element here --> <canvas id="canvas" width="400" height="400" style="display:none;"></canvas> </div> </div>
             
-            <!-- Second Column (Controls & Buttons) -->
+            <!-- Second Column-->
             <div class="col-lg-5">
               <h2>Select Head</h2>
               <div  class="horizontal-scroll">
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 0)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/Mchead.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 1)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/VenomHead.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 2)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/GokuHead (1).png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 3)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/IronHat.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 4)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/RickandMhat.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 5)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/SpaceHead.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 6)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/PresidentHat.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 7)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/SeaHead.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 8)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/MiliHat.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 9)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/PhantomHat.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 10)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/spidermanHead.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 11)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/PFHead.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 12)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/head/BinanceHat.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 18)">Deselect</button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 0)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/McDonald's.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 1)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/Venom-logo.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 2)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/goku.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 3)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/iron-man.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 4)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/rick-and-morty.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 5)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/nasa-logo-web-rgb.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 6)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/america.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 7)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/aqua.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 8)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/pilot.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 9)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/phantom.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 10)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/spiderman.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 11)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/pumpFun.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 12)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/binance.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 13)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/bane.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 14)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/Saitama Sensei.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 15)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/sonic.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 16)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/Marshmellow.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('head', 17)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/SeaMon.jpg" alt=""></button>
               </div>
-  
         
               <!-- Eyes Selection -->
                <h2>Select Teeth/Eyes</h2>
                <div  class="horizontal-scroll">
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 0)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Mcteeth.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 1)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Venomteeth.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 2)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/GokuTeeth.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 3)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Ironteeth.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 4)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/RickandMortyTeeth.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 5)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/RickandMortyTeeth.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 6)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Mic.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 7)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/SeaTeeth.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 8)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Granade.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 9)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/PhantomTeeth.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 10)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/spiderman.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 11)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/pumpfunPill.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 12)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Binanceteeth.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 13)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/teeth/Glasses.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 18)">Deselect</button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 0)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/McDonald's.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 1)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/Venom-logo.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 2)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/goku.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 3)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/iron-man.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 4)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/rick-and-morty.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 5)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/nasa-logo-web-rgb.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 6)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/america.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 7)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/aqua.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 8)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/pilot.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 9)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/phantom.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 10)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/spiderman.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 11)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/pumpFun.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 12)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/binance.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 13)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/bane.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 14)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/Saitama Sensei.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 15)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/sonic.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 16)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/Marshmellow.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('eyes', 17)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/SeaMon.jpg" alt=""></button>
                </div>
         
               <!-- Ears Selection -->
                <h2>Select Body</h2>
                <div  class="horizontal-scroll">
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 0)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/Mcbody.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 1)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/VenomBod.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 2)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/Gokubod.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 3)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/IronBod.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 4)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/RickandMBody.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 5)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/SpaceBod.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 6)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/PresidoBod.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 7)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/SeaBod.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 8)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/AviBod.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 9)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/PhantomBod.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 10)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/spidermanBod.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 11)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/pumpfunBod.png" alt=""></button>
-                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 12)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/body/Binancebody.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 18)">Deselect</button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 0)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/McDonald's.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 1)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/Venom-logo.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 2)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/goku.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 3)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/iron-man.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 4)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/rick-and-morty.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 5)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/nasa-logo-web-rgb.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 6)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/america.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 7)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/aqua.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 8)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/pilot.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 9)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/phantom.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 10)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/spiderman.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 11)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/pumpFun.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 12)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/binance.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 13)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/bane.png" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 14)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/Saitama Sensei.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 15)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/sonic.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 16)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/Marshmellow.jpg" alt=""></button>
+                <button style="border-radius: 10%; background-color: bisque;" onclick="selectPart('ears', 17)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/logos/SeaMon.jpg" alt=""></button>
                </div>
         
   
@@ -190,14 +206,13 @@
                             <button onclick="selectPart('background', 0)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/original.png" alt=""></button>
                             <button onclick="selectPart('background', 1)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/Gokusky.png" alt=""></button>
                             <button onclick="selectPart('background', 2)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/RickandMPortal.png" alt=""></button>
-                            <button onclick="selectPart('background', 3)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/AstronautBackground.png" alt=""></button>
+                            <button onclick="selectPart('background', 3)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/Space.png" alt=""></button>
                             <button onclick="selectPart('background', 4)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/Sonicbackground.png" alt=""></button>
                             <button onclick="selectPart('background', 5)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/Presido.png" alt=""></button>
                             <button onclick="selectPart('background', 6)"><img style="height: 50px; width: auto; border-radius: 80%;" src="./nft/background/Partybackground.png" alt=""></button>
                            </div>
         
                            
-              <!-- Randomize and Download -->
                <div style="padding-top: 20px;">
                 <button style="margin: 30px; width: auto; height: auto; padding-left: 18px; padding-right: 18px; padding-top: 13px; padding-bottom: 13px; background: rgb(203, 174, 137); justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex; border: none;" onclick="pickRandom()">Auto Generate</button>
                 <button style="margin: 30px; width: auto; height: auto; padding-left: 18px; padding-right: 18px; padding-top: 13px; padding-bottom: 13px; background: rgb(203, 174, 137); justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex; border: none;" onclick="downloadMeme()">Download Meme</button>
@@ -207,7 +222,6 @@
         </div>
         
     </div>
-
       </div>
     
 </section>
@@ -218,15 +232,14 @@
 <section>
 
   <script>
-    // Arrays for different body parts
-    const heads = ['./nft/head/Mchead.png', './nft/head/VenomHead.png', './nft/head/GokuHead (1).png', './nft/head/IronHat.png', './nft/head/RickandMhat.png', './nft/head/SpaceHead.png', './nft/head/PresidentHat.png', './nft/head/SeaHead.png', './nft/head/MiliHat.png', './nft/head/PhantomHat.png', './nft/head/spidermanHead.png', './nft/head/PFHead.png', './nft/head/BinanceHat.png'];
-const eyes = ['./nft/teeth/Mcteeth.png', './nft/teeth/Venomteeth.png', './nft/teeth/GokuTeeth.png', './nft/teeth/Ironteeth.png', './nft/teeth/RickandMortyTeeth.png', './nft/teeth/Mic.png', './nft/teeth/SeaTeeth.png', './nft/teeth/Granade.png', './nft/teeth/PhantomTeeth.png', './nft/teeth/spiderman.png', './nft/teeth/pumpfunPill.png', './nft/teeth/Binanceteeth.png', './nft/teeth/Glasses.png'];
-const ears = ['./nft/body/Mcbody.png', './nft/body/VenomBod.png', './nft/body/Gokubod.png', './nft/body/IronBod.png', './nft/body/RickandMBody.png', './nft/body/SpaceBod.png', './nft/body/PresidoBod.png', './nft/body/SeaBod.png', './nft/body/AviBod.png', './nft/body/PhantomBod.png', './nft/body/spidermanBod.png', './nft/body/pumpfunBod.png', './nft/body/Binancebody.png'];
-const background = ['./nft/background/original.png', './nft/background/Gokusky.png', './nft/background/RickandMPortal.png', './nft/background/AstronautBackground.png', './nft/background/Sonicbackground.png', './nft/background/Presido.png', './nft/background/Partybackground.png'];
+const heads = ['./nft/head/Mchead.png', './nft/head/VenomHead.png', './nft/head/GokuHead (1).png', './nft/head/IronHat.png', './nft/head/RickandMhat.png', './nft/head/SpaceHead.png', './nft/head/PresidentHat.png', './nft/head/SeaHead.png', './nft/head/MiliHat.png', './nft/head/PhantomHat.png', './nft/head/spidermanHead.png', './nft/head/PFHead.png', './nft/head/BinanceHat.png','./nft/head/BaneHead.png','./nft/head/onepunchmanHead.png','./nft/head/SonicHead.png','./nft/head/MarshmellowHead.png','./nft/head/SeaMonHead.png', null];
+const eyes = ['./nft/teeth/Mcteeth.png', './nft/teeth/Venomteeth.png', './nft/teeth/GokuTeeth.png', './nft/teeth/Ironteeth.png', './nft/teeth/RickandMortyTeeth.png','./nft/teeth/space.png', './nft/teeth/Mic.png', './nft/teeth/SeaTeeth.png', './nft/teeth/Granade.png', './nft/teeth/PhantomTeeth.png', './nft/teeth/spiderman.png', './nft/teeth/pumpfunPill.png', './nft/teeth/Binanceteeth.png','./nft/teeth/BaneTeeth.png','./nft/teeth/onepunchmanTeeth.png','./nft/teeth/SonicRing.png','./nft/teeth/MarshmellowTeeth.png','./nft/teeth/SeaMonTeeth.png', null];
+const ears = ['./nft/body/Mcbody.png', './nft/body/VenomBod.png', './nft/body/Gokubod.png', './nft/body/IronBod.png', './nft/body/RickandMBody.png', './nft/body/SpaceBod.png', './nft/body/PresidoBod.png', './nft/body/SeaBod.png', './nft/body/AviBod.png', './nft/body/PhantomBod.png', './nft/body/spiderman.png', './nft/body/pumpfunBod.png', './nft/body/Binancebody.png','./nft/body/BaneBod.png','./nft/body/onepunchmanBod.png','./nft/body/SonicBod1.png','./nft/body/MarshmellowBod.png','./nft/body/SeaMonBod.png', null];
+const background = ['./nft/background/original.png', './nft/background/Gokusky.png', './nft/background/RickandMPortal.png', './nft/background/Space.png', './nft/background/Sonicbackground.png', './nft/background/Presido.png', './nft/background/Partybackground.png'];
 
-let selectedHead = '';
-let selectedEyes = '';
-let selectedEars = '';
+let selectedHead = null;
+let selectedEyes = null;
+let selectedEars = null;
 let selectedBackground = './nft/background/original.png';
 
 function selectPart(part, index) {
@@ -246,9 +259,9 @@ function selectPart(part, index) {
 }
 
 function pickRandom() {
-    const randomHead = Math.floor(Math.random() * heads.length);
-    const randomEyes = Math.floor(Math.random() * eyes.length);
-    const randomEars = Math.floor(Math.random() * ears.length);
+    const randomHead = Math.floor(Math.random() * (heads.length - 1));
+    const randomEyes = Math.floor(Math.random() * (eyes.length - 1));
+    const randomEars = Math.floor(Math.random() * (ears.length - 1));
     const randomBackground = Math.floor(Math.random() * background.length);
     selectPart('head', randomHead);
     selectPart('eyes', randomEyes);
@@ -267,33 +280,39 @@ function downloadMeme() {
         console.error('Failed to get 2D context');
         return;
     }
-    canvas.width = 400;
-    canvas.height = 400;
 
-    const backgroundImage = new Image();
-    const eyesImage = new Image();
-    const earsImage = new Image();
-    const headImage = new Image();
+    const originalWidth = 400;
+    const originalHeight = 400;
+    const scaleFactor = 20;
 
-    backgroundImage.src = selectedBackground || './nft/background/original.png';
-    eyesImage.src = selectedEyes || './nft/teeth/Venomteeth.png';
-    earsImage.src = selectedEars || './nft/body/VenomBod.png';
-    headImage.src = selectedHead || './nft/head/VenomHead.png';
+    canvas.width = originalWidth * scaleFactor;
+    canvas.height = originalHeight * scaleFactor;
+    ctx.scale(scaleFactor, scaleFactor);
+
+    const backgroundImage = selectedBackground ? new Image() : null;
+    const eyesImage = selectedEyes ? new Image() : null;
+    const earsImage = selectedEars ? new Image() : null;
+    const headImage = selectedHead ? new Image() : null;
+
+    if (backgroundImage) backgroundImage.src = selectedBackground;
+    if (eyesImage) eyesImage.src = selectedEyes;
+    if (earsImage) earsImage.src = selectedEars;
+    if (headImage) headImage.src = selectedHead;
 
     Promise.all([
-        loadImage(backgroundImage),
-        loadImage(eyesImage),
-        loadImage(earsImage),
-        loadImage(headImage)
+        backgroundImage ? loadImage(backgroundImage) : Promise.resolve(),
+        eyesImage ? loadImage(eyesImage) : Promise.resolve(),
+        earsImage ? loadImage(earsImage) : Promise.resolve(),
+        headImage ? loadImage(headImage) : Promise.resolve()
     ]).then(() => {
-        ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
-        ctx.drawImage(eyesImage, 0, 0, canvas.width, canvas.height);
-        ctx.drawImage(earsImage, 0, 0, canvas.width, canvas.height);
-        ctx.drawImage(headImage, 0, 0, canvas.width, canvas.height);
+        if (backgroundImage) ctx.drawImage(backgroundImage, 0, 0, originalWidth, originalHeight);
+        if (eyesImage) ctx.drawImage(eyesImage, 0, 0, originalWidth, originalHeight);
+        if (earsImage) ctx.drawImage(earsImage, 0, 0, originalWidth, originalHeight);
+        if (headImage) ctx.drawImage(headImage, 0, 0, originalWidth, originalHeight);
 
         const link = document.createElement('a');
-        link.download = 'custom-meme.jpeg';  // Change to JPEG
-        link.href = canvas.toDataURL('image/jpeg');  // Change to JPEG
+        link.download = 'custom-meme.jpeg';
+        link.href = canvas.toDataURL('image/jpeg');
         link.click();
     }).catch(error => {
         console.error("Error loading images.", error);
@@ -302,13 +321,15 @@ function downloadMeme() {
 
 function loadImage(img) {
     return new Promise((resolve, reject) => {
+        if (!img) {
+            resolve();
+            return;
+        }
         img.crossOrigin = 'anonymous';
         img.onload = resolve;
         img.onerror = () => reject(new Error(`Error loading image: ${img.src}`));
     });
 }
-
-
 
 </script>
   
